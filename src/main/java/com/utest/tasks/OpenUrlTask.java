@@ -7,6 +7,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
 
 public class OpenUrlTask implements Task {
+
     private final String url;
 
     public OpenUrlTask(String url) {
@@ -20,7 +21,7 @@ public class OpenUrlTask implements Task {
         );
     }
 
-    public static Performable then(String url) {
+    public static Performable on(String url) {
         return Instrumented.instanceOf(OpenUrlTask.class).withProperties(url);
     }
 }
