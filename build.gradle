@@ -8,8 +8,6 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-defaultTasks 'clean', 'test', 'aggregate'
-
 repositories {
     mavenCentral()
 }
